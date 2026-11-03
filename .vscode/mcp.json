@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "duckdb": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "${workspaceFolder}",
+        "mcp-server-duckdb",
+        "--db-path",
+        "${workspaceFolder}/netflix.duckdb",
+        "--readonly"
+      ]
+    }
+  }
+}
